@@ -96,5 +96,62 @@ Fast-forward
  create mode 100644 README.md
 
 E:\Comp Science- workspace\Problem_4_16>
+
+E:\Comp Science- workspace\Problem_4_16>git checkout -b dev
+M       README.md
+Switched to a new branch 'dev'
+
+E:\Comp Science- workspace\Problem_4_16>git branch
+* dev
+  master
+
+E:\Comp Science- workspace\Problem_4_16>git add .
+
+E:\Comp Science- workspace\Problem_4_16>git commit -m "added command prompt info
+"
+[dev 25f709f] added command prompt info
+ 1 file changed, 98 insertions(+), 1 deletion(-)
+
+E:\Comp Science- workspace\Problem_4_16>git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin dev
+
+
+E:\Comp Science- workspace\Problem_4_16>git push --set-upstream origin dev
+Username for 'https://github.com': rymerj
+Password for 'https://rymerj@github.com':
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.45 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/rymerj/Problem_4_16.git
+ * [new branch]      dev -> dev
+Branch dev set up to track remote branch dev from origin.
+
+E:\Comp Science- workspace\Problem_4_16>
 ```
 
