@@ -1,35 +1,104 @@
-# Problem_4_16
+# Random letter Display
+##Intro
+This program with use math.random to display a random uppercase letter.
+##Outline
+//Declare range of numbers for random letter.
+//Declare random number integer
+//Declare equation for random number
+//display random uppercase letter
+##References 
+Liang, Daniel y., Intro Java Programming 9th edition pg. 201
+##Code
+
+public class Random_Letter {
+
+	public static void main(String[] args) {
+		
+		// "A" is 65
+```
+		int startingValue =65;
+```
+		// "Z" is 90 and we want to cover the range, so we added 
+		//1 more to ensure we would cover a through z
+```
+		int endingValue = 90-startingValue+1;
+```		
+		/*a + Math.random()*b gives us random number between a and a+b excluding a+b
+		 * 
+		 */
+```
+		int randomNumber;
+```
+		/* Make a new make a new variable and then
+		 fill it with a random number that is between our starting value 
+		 and end value. then print it out. 
+		*/
+```
+		randomNumber = (int)(startingValue + Math.random()*endingValue);
+```
+		//System.out.println(randomNumber); debugging statement
+		
+		//display random letter
+```
+		char letter = (char)randomNumber;
+		System.out.println(letter);
+	}
+}
+```
+##Console
+```
+Y
+```
+
+
+
 ##Comand prompt
 ```Microsoft Windows [Version 6.1.7601]
 Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
 Switched to flash drive
-``
+```
 C:\Users\LAB>e:
-``
+```
+switched to my project
+```
 E:\>cd "Comp Science- workspace"
 
 E:\Comp Science- workspace>cd Problem_4_16
-
+```
+initialized local repository
+```
 E:\Comp Science- workspace\Problem_4_16>git init
 Initialized empty Git repository in E:/Comp Science- workspace/Problem_4_16/.git
 /
-
+```
+added files to local repository
+```
 E:\Comp Science- workspace\Problem_4_16>git add .
+```
+added name
+```
 
 E:\Comp Science- workspace\Problem_4_16>git config user.name "Joe Rymer"
-
+```
+added email adress
+```
 E:\Comp Science- workspace\Problem_4_16>git config user.email "rymerj@student.sw
 osu.edu"
-
+```
+commmited change
+```
 E:\Comp Science- workspace\Problem_4_16>git commit -m "initial commit"
 [master (root-commit) 8369793] initial commit
  2 files changed, 23 insertions(+)
  create mode 100644 .classpath
  create mode 100644 .project
-
+```
+added remote repository
 E:\Comp Science- workspace\Problem_4_16>git remote add origin https://github.com
 /rymerj/Problem_4_16.git
-
+```
+pushed to remote repository
+```
 E:\Comp Science- workspace\Problem_4_16>git push -u origin master
 Username for 'https://github.com': rymerj
 Password for 'https://rymerj@github.com':
@@ -153,5 +222,80 @@ To https://github.com/rymerj/Problem_4_16.git
 Branch dev set up to track remote branch dev from origin.
 
 E:\Comp Science- workspace\Problem_4_16>
+
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\LAB>E:
+
+E:\>cd "Comp Science- workspace"
+
+E:\Comp Science- workspace>cd Problem_4_16
+
+E:\Comp Science- workspace\Problem_4_16>git status
+On branch dev
+Your branch is up-to-date with 'origin/dev'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\Comp Science- workspace\Problem_4_16>branch
+'branch' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Comp Science- workspace\Problem_4_16>git branch
+* dev
+  master
+
+E:\Comp Science- workspace\Problem_4_16>git add .
+
+E:\Comp Science- workspace\Problem_4_16>git commit -m "added code to generate le
+tter"
+[dev 34213e9] added code to generate letter
+ 3 files changed, 72 insertions(+)
+ rewrite bin/Random_Letter.class (60%)
+
+E:\Comp Science- workspace\Problem_4_16>git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': rymerj
+Password for 'https://rymerj@github.com':
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.66 KiB | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+To https://github.com/rymerj/Problem_4_16.git
+   25f709f..34213e9  dev -> dev
+
+E:\Comp Science- workspace\Problem_4_16>
 ```
+##Summary
+I started off thinking that it would be prety easy to code, but it was a little more
+complicated. used Git hub to keep a backup of my source code. I had to work out some
+of the bugs with the range of the code to get the final code to work right.
+
 

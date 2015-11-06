@@ -12,12 +12,15 @@ public class Random_Letter {
 		/*a + Math.random()*b gives us random number between a and a+b excluding a+b
 		 * 
 		 */
-		int randomNumber;
+		int randomNumber;/* Make a new make a new variable and then
+		 fill it with a random number that is between our starting value 
+		 and end value. then print it out. 
+		*/
 		randomNumber = (int)(startingValue + Math.random()*endingValue);
-		System.out.println(randomNumber);
+		//System.out.println(randomNumber); debugging statement
 		
+		//display random letter
 		char letter = (char)randomNumber;
 		System.out.println(letter);
 	}
-
 }
