@@ -2,7 +2,16 @@
 public class Random_Letter {
 
 	public static void main(String[] args) {
+		System.out.println("First function call");
+		int randomNumber = generateRandomChar();
+		System.out.println("Second function call");
+		generateRandomChar();
 		
+		//display random letter
+		char letter = (char)randomNumber;
+		System.out.println(letter);
+	}
+	public static int generateRandomChar(){
 		// "A" is 65
 		int startingValue =65;
 		// "Z" is 90 and we want to cover the range, so we added 
@@ -17,10 +26,8 @@ public class Random_Letter {
 		 and end value. then print it out. 
 		*/
 		randomNumber = (int)(startingValue + Math.random()*endingValue);
-		//System.out.println(randomNumber); debugging statement
-		
-		//display random letter
-		char letter = (char)randomNumber;
-		System.out.println(letter);
+		System.out.println(randomNumber); //debugging statement
+		System.out.println((char)randomNumber);
+		return randomNumber;
 	}
 }
